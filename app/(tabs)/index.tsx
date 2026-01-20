@@ -1,3 +1,5 @@
+console.log("SUPABASE URL:", process.env.EXPO_PUBLIC_SUPABASE_URL);
+
 import { ActivityIndicator, View } from "react-native";
 import { useEffect, useState } from "react";
 import { supabase } from "../../src/lib/supabase";
@@ -6,6 +8,8 @@ import { useProfile } from "../../src/hooks/useProfile";
 import Screen from "../../src/components/Screen";
 import { Card } from "../../src/components/Card";
 import { Title, Label, Value } from "../../src/components/Text";
+
+
 
 export default function DashboardScreen() {
   const [loading, setLoading] = useState(true);
